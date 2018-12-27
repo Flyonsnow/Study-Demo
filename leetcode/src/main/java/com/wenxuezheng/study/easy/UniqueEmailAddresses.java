@@ -22,7 +22,7 @@ public class UniqueEmailAddresses {
         Set<String> uniqueMailSet = new HashSet<>();
         for (int i = 0; i < emails.length; i++) {
             final String[] emailArr = emails[i].split("@");
-            uniqueMailSet.add(emailArr[0].substring(0, emailArr[0].indexOf("+")).replaceAll(".", "") + emailArr[1]);
+            uniqueMailSet.add(emailArr[0].substring(0, emailArr[0].indexOf("+")).replace(".", "") + emailArr[1]);
         }
         return uniqueMailSet.size();
     }
