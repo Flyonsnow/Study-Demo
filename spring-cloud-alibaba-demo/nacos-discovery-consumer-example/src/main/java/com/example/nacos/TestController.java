@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * TODO
+ * TestController
  *
  * @author hubo
  * @since 2019-01-12
@@ -21,6 +21,11 @@ public class TestController {
     @Autowired
     private EchoService echoService;
 
+    /**
+     * 通过 feign 调用 provider 的 echoService
+     * @param message
+     * @return
+     */
     @GetMapping("/echo")
     public String testEcho(String message) {
         return echoService.echo(message);
