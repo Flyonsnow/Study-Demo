@@ -11,6 +11,9 @@
         <module>nacos-discovery-provider-example</module>
         <module>nacos-discovery-consumer-example</module>
         <module>nacos-config-example</module>
+        <module>nacos-dubbo-provider-example</module>
+        <module>nacos-dubbo-consumer-example</module>
+        <module>nacos-dubbo-common-example</module>
     </modules>
     <packaging>pom</packaging>
 
