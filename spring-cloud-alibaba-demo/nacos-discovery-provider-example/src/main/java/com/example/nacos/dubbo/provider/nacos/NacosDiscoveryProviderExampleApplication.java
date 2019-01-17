@@ -1,4 +1,4 @@
-package com.example.nacos;
+package com.example.nacos.dubbo.provider.nacos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

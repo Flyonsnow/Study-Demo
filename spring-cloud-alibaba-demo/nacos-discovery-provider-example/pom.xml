@@ -10,7 +10,7 @@
     <groupId>com.example.nacos</groupId>
     <artifactId>nacos-discovery-provider-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>nacos</name>
+    <name>nacos-discovery-provider-example</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

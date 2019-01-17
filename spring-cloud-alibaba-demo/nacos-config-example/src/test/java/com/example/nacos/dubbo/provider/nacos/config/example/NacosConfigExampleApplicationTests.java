@@ -1,4 +1,4 @@
-package com.example.nacos.config.example;
+package com.example.nacos.dubbo.provider.nacos.config.example;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

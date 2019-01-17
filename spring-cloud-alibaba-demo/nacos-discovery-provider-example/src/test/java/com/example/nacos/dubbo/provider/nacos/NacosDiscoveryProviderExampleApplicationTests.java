@@ -1,4 +1,4 @@
-package com.example.nacos;
+package com.example.nacos.dubbo.provider.nacos;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class NacosDiscoveryConsumerExampleApplicationTests {
+public class NacosDiscoveryProviderExampleApplicationTests {
 
 	@Test
 	public void contextLoads() {

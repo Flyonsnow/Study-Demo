@@ -1,4 +1,4 @@
-package com.example.nacos;
+package com.example.nacos.dubbo.provider.nacos;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

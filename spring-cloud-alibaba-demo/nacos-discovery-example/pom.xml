@@ -12,7 +12,7 @@
     <artifactId>nacos-discovery-example</artifactId>
     <packaging>jar</packaging>
 
-    <name>nacos-discovery-example Maven Webapp</name>
+    <name>nacos-discovery-example</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

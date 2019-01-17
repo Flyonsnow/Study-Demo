@@ -1,4 +1,4 @@
-package com.example.nacos.discovery;
+package com.example.nacos.dubbo.provider.nacos.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

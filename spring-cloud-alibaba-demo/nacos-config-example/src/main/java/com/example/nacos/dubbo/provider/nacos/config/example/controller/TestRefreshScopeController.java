@@ -1,8 +1,9 @@
-package com.example.nacos.config.example.controller;
+package com.example.nacos.dubbo.provider.nacos.config.example.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2019-01-16
  */
 @Slf4j
-//@RefreshScope
+@RefreshScope
 @RestController
-@RequestMapping("/test")
-public class TestController {
+@RequestMapping("/testScope")
+public class TestRefreshScopeController {
 
     @Autowired
-    private TestController testController;
+    private TestRefreshScopeController testController;
 
     @Value(value = "${name}")
     String name;

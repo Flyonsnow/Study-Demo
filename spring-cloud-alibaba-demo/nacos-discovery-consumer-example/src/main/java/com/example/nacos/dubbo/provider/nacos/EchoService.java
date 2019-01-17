@@ -1,4 +1,4 @@
-package com.example.nacos;
+package com.example.nacos.dubbo.provider.nacos;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
