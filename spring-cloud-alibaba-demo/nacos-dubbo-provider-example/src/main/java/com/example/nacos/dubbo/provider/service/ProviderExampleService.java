@@ -7,13 +7,18 @@ import org.springframework.beans.factory.annotation.Value;
 
 
 /**
- * TODO
+ * ProviderExampleService
  *
  * @author hubo
  * @since 2019-01-16
  */
 @Slf4j
-@Service(version = "1.0.0")
+@Service(
+        version = "${demo.service.version}",
+        application = "${dubbo.application.id}",
+        protocol = "${dubbo.protocol.id}",
+        registry = "${dubbo.registry.id}"
+)
 public class ProviderExampleService implements ExampleService {
 
     /**
