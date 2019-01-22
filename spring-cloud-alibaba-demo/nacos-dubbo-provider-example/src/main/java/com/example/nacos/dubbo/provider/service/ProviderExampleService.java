@@ -13,12 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
  * @since 2019-01-16
  */
 @Slf4j
-@Service(
-        version = "${demo.service.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+@Service(version = "${demo.service.version}")
 public class ProviderExampleService implements ExampleService {
 
     /**
