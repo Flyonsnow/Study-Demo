@@ -23,4 +23,9 @@ public class TestConsumer {
     public void inputConsumers(String message) {
         System.out.println("s-consumer:" + message);
     }
+
+    @StreamListener("s-input")
+    public void inputConsumers2(Test message) {
+        System.out.println("s-consumer2:" + message);
+    }
 }

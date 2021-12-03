@@ -40,8 +40,9 @@ public class TestController {
         MessageHeaders messageHeaders = new MessageHeaders(headers);
         Message<String> message = MessageBuilder.createMessage(str, messageHeaders);
         streamProducer.output().send(message);
-        stream2Producer.output2().send(message);
+        Test test = new Test();
+        test.setName(str);
+        Message<Test> message2 = MessageBuilder.createMessage(test, messageHeaders);
+        stream2Producer.output2().send(message2);
     }
-
-
 }
