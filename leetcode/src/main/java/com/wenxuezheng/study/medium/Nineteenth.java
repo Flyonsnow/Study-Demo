@@ -1,5 +1,7 @@
 package com.wenxuezheng.study.medium;
 
+import com.alibaba.fastjson.JSON;
+
 public class Nineteenth {
     public static void main(String[] args) {
         ListNode listNode0 = new ListNode(0);
@@ -13,11 +15,12 @@ public class Nineteenth {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         listNode4.next = listNode5;
-        ListNode listNode = removeNthFromEnd(listNode0, 2);
+        //ListNode listNode = removeNthFromEnd(listNode0, 2);
         //System.out.println(listNode);
-        ListNode listNode6 = removeNthFromEndWithTwoPointer(listNode, 2);
-        System.out.println(listNode6);
-
+        //ListNode listNode6 = removeNthFromEndWithTwoPointer(listNode0, 2);
+        //System.out.println(listNode6);
+        ListNode listNode = removeNthFromEndCustom(listNode0, 6);
+        System.out.println(JSON.toJSONString(listNode));
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
@@ -33,13 +36,13 @@ public class Nineteenth {
             curren = curren.next;
         }
         int min = i - n;
-        if(min < 0) {
+        if (min < 0) {
             return null;
         }
-        if(min == 0) {
+        if (min == 0) {
             return head.next;
         }
-        ListNode listNode = arr[min-1];
+        ListNode listNode = arr[min - 1];
         listNode.next = i - n + 1 > i ? null : arr[i - n + 1];
         return head;
     }
@@ -49,13 +52,13 @@ public class Nineteenth {
      */
     public static ListNode removeNthFromEndWithTwoPointer(ListNode head, int n) {
 
-        if(head == null) return head;
+        if (head == null) return head;
         ListNode firstPtr = head;
         ListNode secondPtr = head;
 
         // second ptr will move forward n times
 
-        for(int i=0; i<n;i++){
+        for (int i = 0; i < n; i++) {
             secondPtr = secondPtr.next;
         }
 
@@ -63,19 +66,19 @@ public class Nineteenth {
         //  this way first pointer will point to nth node from the end
 
         // But first we have to check if we are supposed to delete the head
-        if(secondPtr==null){
-            if(head.next!=null){
+        if (secondPtr == null) {
+            if (head.next != null) {
                 head.val = head.next.val;
                 head.next = head.next.next;
             }
             // In case Linked List has only one node i.e. head only
-            else{
+            else {
                 head = null;
             }
             return head;
         }
 
-        while(secondPtr.next!=null){
+        while (secondPtr.next != null) {
             firstPtr = firstPtr.next;
             secondPtr = secondPtr.next;
         }
@@ -84,6 +87,34 @@ public class Nineteenth {
 
         return head;
     }
+
+
+    public static ListNode removeNthFromEndCustom(ListNode head, int n) {
+        if (head == null) {
+            return null;
+        }
+        ListNode first = head;
+        ListNode second = head;
+
+        for (int i = 0; i < n; i++) {
+            second = second.next;
+        }
+
+        if (second == null) {
+            if (head.next == null) {
+                return null;
+            } else {
+                return head.next;
+            }
+        }
+        while (second.next != null) {
+            second = second.next;
+            first = first.next;
+        }
+        first.next = first.next.next;
+        return head;
+    }
+
 }
 
 
@@ -104,5 +135,30 @@ class ListNode {
     ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+    }
+
+    public ListNode getNext() {
+        return next;
+    }
+
+    public void setNext(ListNode next) {
+        this.next = next;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("ListNode{");
+        sb.append("val=").append(val);
+        sb.append(", next=").append(next);
+        sb.append('}');
+        return sb.toString();
     }
 }
