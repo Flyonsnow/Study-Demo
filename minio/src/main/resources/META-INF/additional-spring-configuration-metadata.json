@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "spring.minio.access-key",
+      "type": "java.lang.String",
+      "defaultValue": "accessKey",
+      "description": "minio access key"
+    },
+    {
+      "name": "spring.minio.secret-key",
+      "type": "java.lang.String",
+      "defaultValue": "secretKey",
+      "description": "minio secret key"
+    },
+    {
+      "name": "spring.minio.url",
+      "type": "java.lang.String",
+      "defaultValue": "url",
+      "description": "minio url"
+    },
+    {
+      "name": "spring.minio.bucket-name",
+      "type": "java.lang.String",
+      "defaultValue": "bucket name",
+      "description": "minio bucket name"
+    }
+  ]
+}

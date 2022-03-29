@@ -1,0 +1,25 @@
+{
+  "groups": [
+  {
+        "name": "spring.minio.access-key",
+        "type": "java.lang.String",
+        "sourceType": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration"
+      },
+      {
+        "name": "spring.minio.secret-key",
+        "type": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration",
+        "sourceType": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration"
+      },
+      {
+        "name": "spring.minio.url",
+        "type": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration",
+        "sourceType": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration"
+      },
+      {
+        "name": "spring.minio.bucket-name",
+        "type": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration",
+        "sourceType": "com.wenxuezheng.study.minio.minio.config.MinioConfiguration"
+      }
+  ],
+  "hints": []
+}
