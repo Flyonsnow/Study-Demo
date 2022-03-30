@@ -19,6 +19,7 @@
         <module>JVM</module>
         <module>leetcode</module>
         <module>minio</module>
+        <module>shutdown-demo</module>
         <module>spring-cloud-alibaba-demo</module>
         <module>spring-cloud-stream</module>
         <module>spring-event</module>
