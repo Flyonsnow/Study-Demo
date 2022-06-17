@@ -18,6 +18,7 @@
         <module>GuavaCache</module>
         <module>JVM</module>
         <module>leetcode</module>
+        <module>micro-service-monitor</module>
         <module>minio</module>
         <module>shutdown-demo</module>
         <module>spring-cloud-alibaba-demo</module>
