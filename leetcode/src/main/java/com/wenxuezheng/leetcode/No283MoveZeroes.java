@@ -1,28 +1,34 @@
-package com.wenxuezheng.study.easy;
+package com.wenxuezheng.leetcode;
 
 /**
- * @author hu.bo@cestc.cn
- * @date 2021/12/27 11:52 PM
+ * #283
+ * https://leetcode.com/problems/move-zeroes/
+ *
+ * Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero elements.
+ *
+ * **Note** that you must do this in-place without making a copy of the array.
  */
-public class MoveZeroes {
+public class No283MoveZeroes {
 
+    private static int[] nums = {0, 1, 0, 3, 12};
 
     public static void main(String[] args) {
-        int[] nums = {0, 1, 0, 3, 12};
-        //moveZeroes(nums);
+        moveZeros20220520(nums);
+        moveZeros20220521(nums);
         //test1(nums);
         moveZeros20220616(nums);
+        moveZeros20220617(nums);
         for (int num : nums) {
             System.out.print(num + ",");
         }
     }
 
     /**
-     * 2022-05-20 第一次
+     * 2022-05-20 first
      *
      * @param nums
      */
-    public static void test1(int[] nums) {
+    public static void moveZeros20220520(int[] nums) {
         Integer zeroPosition = null;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
@@ -71,8 +77,7 @@ public class MoveZeroes {
 
     }
 
-
-    public static void moveZeroes(int[] nums) {
+    public static void moveZeros20220521(int[] nums) {
         int pos = 0;
         for (int num : nums) {
             if (num != 0) {
@@ -97,7 +102,7 @@ public class MoveZeroes {
         }
     }
 
-    public static void moveZero20220617(int[] nums) {
+    public static void moveZeros20220617(int[] nums) {
         int pos = 0;
         for (int num : nums) {
             if (num != 0) {
