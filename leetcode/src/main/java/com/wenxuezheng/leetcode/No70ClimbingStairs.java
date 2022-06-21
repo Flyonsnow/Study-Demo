@@ -18,7 +18,7 @@ public class No70ClimbingStairs {
         int[] testNums = {0, 1, 2, 3, 4, 5, 45};
 
         for (int testNum : testNums) {
-            int result = climbStairs20220620Recustion(testNum);
+            int result = climbStairs20220620Recursion(testNum);
             result = climbStairs20220621(testNum);
             result = climbStairs20220621Optimization(testNum);
             System.out.println(result);
@@ -41,7 +41,7 @@ public class No70ClimbingStairs {
      * @param n
      * @return
      */
-    public static int climbStairs20220620Recustion(int n) {
+    public static int climbStairs20220620Recursion(int n) {
         if (n == 0) {
             return 0;
         }
@@ -51,7 +51,7 @@ public class No70ClimbingStairs {
         if (n == 2) {
             return 2;
         }
-        return climbStairs20220620Recustion(n - 1) + climbStairs20220620Recustion(n - 2);
+        return climbStairs20220620Recursion(n - 1) + climbStairs20220620Recursion(n - 2);
     }
 
     /**
@@ -60,21 +60,21 @@ public class No70ClimbingStairs {
      * @param n
      * @return
      */
-    public static int climbStairs20220620RecustionWithMemorization(int n) {
+    public static int climbStairs20220620RecursionWithMemorization(int n) {
         Map<Integer, Integer> mem = new HashMap<>(n);
         mem.put(0, 0);
         mem.put(1, 1);
         mem.put(2, 2);
-        return climbStairs20220620RecustionWithMemorizationHandle(n, mem);
+        return climbStairs20220620RecursionWithMemorizationHandle(n, mem);
 
     }
 
-    private static int climbStairs20220620RecustionWithMemorizationHandle(int n, Map<Integer, Integer> mem) {
+    private static int climbStairs20220620RecursionWithMemorizationHandle(int n, Map<Integer, Integer> mem) {
         if (mem.containsKey(n)) {
             return mem.get(n);
         }
         mem.put(n,
-                climbStairs20220620RecustionWithMemorizationHandle(n - 1, mem) + climbStairs20220620RecustionWithMemorizationHandle(n - 2, mem));
+                climbStairs20220620RecursionWithMemorizationHandle(n - 1, mem) + climbStairs20220620RecursionWithMemorizationHandle(n - 2, mem));
         return mem.get(n);
     }
 
