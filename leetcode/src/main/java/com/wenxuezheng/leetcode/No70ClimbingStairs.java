@@ -15,12 +15,16 @@ import java.util.Map;
 public class No70ClimbingStairs {
 
     public static void main(String[] args) {
-        int[] testNums = {0, 1, 2, 3, 4, 5, 45};
+        int[] testNums = {1, 2, 3, 4, 5, 45};
 
         for (int testNum : testNums) {
-            int result = climbStairs20220620Recursion(testNum);
-            result = climbStairs20220621(testNum);
-            result = climbStairs20220621Optimization(testNum);
+            int result = 0;
+            //result = climbStairs20220620Recursion(testNum);
+            //result = climbStairs20220621(testNum);
+            //result = climbStairs20220621Optimization(testNum);
+
+            //result = climbStairsRecursion20220622(testNum);
+            result = climbStairsRecursionWithMemorization20220622(testNum);
             System.out.println(result);
         }
     }
@@ -122,4 +126,46 @@ public class No70ClimbingStairs {
         }
         return prev2;
     }
+
+    public static int climbStairsRecursion20220622(int n) {
+        if (n == 1 || n == 2) {
+            return n;
+        }
+        return climbStairsRecursion20220622(n - 1) + climbStairsRecursion20220622(n - 2);
+    }
+
+    public static int climbStairsRecursionWithMemorization20220622(int n) {
+        if (n == 1 || n == 2) {
+            return n;
+        }
+        Integer[] mem = new Integer[n + 1];
+        mem[1] = 1;
+        mem[2] = 2;
+
+        return climbStairs20220622(n, mem);
+    }
+
+    private static int climbStairs20220622(int n, Integer[] mem) {
+        if (mem[n] != null) {
+            return mem[n];
+        }
+        mem[n] = climbStairs20220622(n - 1, mem) + climbStairs20220622(n - 2, mem);
+        return mem[n];
+    }
+
+    public static int climbStairsDp20220622(int n) {
+        if (n == 1 || n == 2) {
+            return n;
+        }
+        int res = 0, prev1 = 1, prev2 = 2;
+
+        for (int i = 3; i <= n; i++) {
+            res = prev1 + prev2;
+            prev1 = prev2;
+            prev2 = res;
+        }
+        return res;
+    }
+
+
 }
