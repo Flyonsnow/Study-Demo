@@ -18,6 +18,7 @@ public class No485MaxConsecutiveOnes {
 
     /**
      * Time: O(n) Space:O(1)
+     *
      * @param nums
      * @return
      */
@@ -33,5 +34,26 @@ public class No485MaxConsecutiveOnes {
             }
         }
         return max >= count ? max : count;
+    }
+
+    /**
+     * Time:O(n), Space: O(1)
+     *
+     * @param nums
+     * @return
+     */
+    public int maxConsecutive20220627(int[] nums) {
+        int res = 0, count = 0;
+        for (int num : nums) {
+            if (num == 1) {
+                count++;
+            } else {
+                res = Math.max(res, count);
+                count = 0;
+            }
+        }
+
+
+        return Math.max(res, count);
     }
 }

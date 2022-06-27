@@ -42,5 +42,14 @@ public class No495TeemoAttacking {
         return res;
     }
 
+    public int findPoisonedDuration20220627(int[] timeSeries, int duration) {
+        int total = 0, last = timeSeries[0] + duration - 1;
+        for (int i = 1; i < timeSeries.length; i++) {
+            int current = timeSeries[i] + duration - 1;
+            total += last >= timeSeries[i] ? current - last : duration;
+            last = current;
+        }
 
+        return total + duration;
+    }
 }
