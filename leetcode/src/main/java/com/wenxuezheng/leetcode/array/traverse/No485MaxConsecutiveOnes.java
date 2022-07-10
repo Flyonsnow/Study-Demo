@@ -1,4 +1,4 @@
-package com.wenxuezheng.leetcode.array;
+package com.wenxuezheng.leetcode.array.traverse;
 
 
 /**
