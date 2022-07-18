@@ -1,8 +1,8 @@
 package com.example.nacos.dubbo.provider.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.example.nacos.dubbo.common.service.ExampleService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Value;
 
 
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
  * @since 2019-01-16
  */
 @Slf4j
-@Service(version = "${demo.service.version}")
+@DubboService(version = "${demo.service.version}")
 public class ProviderExampleService implements ExampleService {
 
     /**
