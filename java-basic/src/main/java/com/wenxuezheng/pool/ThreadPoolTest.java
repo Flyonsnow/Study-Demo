@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author   
+ * @author hu.bo
  * 2022/8/30 15:24
  */
 public class ThreadPoolTest {

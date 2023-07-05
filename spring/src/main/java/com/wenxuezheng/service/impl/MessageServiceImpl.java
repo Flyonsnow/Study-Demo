@@ -7,7 +7,7 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 
 
 /**
- * @author   
+ * @author hu.bo
  * 2022/9/29 20:41
  */
 public class MessageServiceImpl implements MessageService, BeanFactoryPostProcessor {

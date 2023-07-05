@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author   
+ * @author hu.bo
  * 2022/8/5 13:45
  */
 @Retention(RetentionPolicy.RUNTIME)

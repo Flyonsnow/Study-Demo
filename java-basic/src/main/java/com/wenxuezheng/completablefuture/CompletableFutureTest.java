@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 
 /**
- * @author   
+ * @author hu.bo
  * 2022/8/25 21:01
  */
 public class CompletableFutureTest {

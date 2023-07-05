@@ -1,0 +1,23 @@
+# 应用名称
+spring:
+    application:
+        name: spring-cloud-gateway
+    cloud:
+      gateway:
+          routes:
+#              - id: websocket
+#                order: 1
+#                uri: http://10.32.72.203:18008
+#                predicates:
+#                    - Path=/swan-message/ws/**
+#                filters:
+#                    - StripPrefix=1
+              - id: websocket1
+                order: 2
+                uri: ws://10.32.72.203:18008
+                predicates:
+                    - Path=/swan-message/ws/**
+                filters:
+                    - StripPrefix=1
+
+

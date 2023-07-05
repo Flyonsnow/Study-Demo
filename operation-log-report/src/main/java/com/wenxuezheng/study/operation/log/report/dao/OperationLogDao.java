@@ -5,7 +5,7 @@ import org.springframework.util.ClassUtils;
 import java.io.Serializable;
 
 /**
- * @author   
+ * @author hu.bo
  * 2022/8/5 16:42
  */
 public interface OperationLogDao<T> {
