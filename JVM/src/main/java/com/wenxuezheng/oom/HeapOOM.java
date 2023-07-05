@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * jvm heap oom
  *
- * @author hubo
+ * @author  
  * @since 2019-02-27
  */
 public class HeapOOM {

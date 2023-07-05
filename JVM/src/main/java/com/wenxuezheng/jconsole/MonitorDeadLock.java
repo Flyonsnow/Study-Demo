@@ -3,7 +3,7 @@ package com.wenxuezheng.jconsole;
 /**
  * TODO
  *
- * @author hubo
+ * @author  
  * @since 2019-03-04
  */
 public class MonitorDeadLock {

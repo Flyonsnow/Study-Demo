@@ -8,7 +8,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/10/19 2:01 下午
  */
 @Slf4j

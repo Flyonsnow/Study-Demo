@@ -4,7 +4,7 @@ import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2022/3/31 2:30 PM
  */
 

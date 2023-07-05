@@ -4,7 +4,7 @@ package com.wenxuezheng.design.pattern.singleton.thread_local;
 /**
  * TODO
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:54 下午
  */
 public class ThreadLocalSingleton {

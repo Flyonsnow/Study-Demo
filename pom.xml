@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <modules>
@@ -25,5 +27,7 @@
         <module>spring-cloud-alibaba-demo</module>
         <module>spring-cloud-stream</module>
         <module>spring-event</module>
+        <module>java-basic</module>
+        <module>spring</module>
     </modules>
 </project>

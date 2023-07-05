@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 容器式单例
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:42 下午
  */
 public class ContainerSingleton {

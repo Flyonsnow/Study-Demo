@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 /**
  * ProviderExampleService
  *
- * @author hubo
+ * @author  
  * @since 2019-01-16
  */
 @Slf4j

@@ -4,7 +4,7 @@ package com.wenxuezheng.design.pattern.singleton.static_singleton;
 /**
  * TODO
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:30 下午
  */
 public class StaticInnerSingleton {

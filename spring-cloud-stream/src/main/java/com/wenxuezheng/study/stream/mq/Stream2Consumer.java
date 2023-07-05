@@ -5,7 +5,7 @@ import org.springframework.messaging.MessageChannel;
 
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/10/19 1:48 下午
  */
 public interface Stream2Consumer {

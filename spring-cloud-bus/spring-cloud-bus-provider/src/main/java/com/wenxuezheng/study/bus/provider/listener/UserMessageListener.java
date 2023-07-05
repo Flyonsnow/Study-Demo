@@ -5,7 +5,7 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.stereotype.Component;
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2022/3/31 10:12 AM
  */
 @Component

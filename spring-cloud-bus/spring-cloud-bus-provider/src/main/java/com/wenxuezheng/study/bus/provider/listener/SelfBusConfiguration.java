@@ -8,7 +8,7 @@ import org.springframework.context.event.EventListener;
 
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2022/3/31 2:47 PM
  */
 @Configuration

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * EchoService {@link com.example.nacos.EchoController}
  *
- * @author hubo
+ * @author  
  * @since 2019-01-12
  */
 @FeignClient("discovery-provider-example")

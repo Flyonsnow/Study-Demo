@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.cloud.bus.event.RemoteApplicationEvent;
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2022/3/31 2:49 PM
  */
 @Data

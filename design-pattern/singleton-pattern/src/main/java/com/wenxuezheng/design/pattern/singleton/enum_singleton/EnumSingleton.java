@@ -4,7 +4,7 @@ package com.wenxuezheng.design.pattern.singleton.enum_singleton;
 /**
  * TODO
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:34 下午
  */
 
