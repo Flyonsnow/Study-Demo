@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * -Xms100m -Xmx100m -XX:+UseSerialGC
  *
- * @author hubo
+ * @author  
  * @since 2019-03-04
  */
 public class MonitorMemory {

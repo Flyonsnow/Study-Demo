@@ -1,7 +1,7 @@
 package com.wenxuezheng.oom;
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/12/5 9:48 下午
  */
 public class StackOverFlowError {

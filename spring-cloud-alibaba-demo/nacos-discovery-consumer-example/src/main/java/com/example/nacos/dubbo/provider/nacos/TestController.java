@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * TestController
  *
- * @author hubo
+ * @author  
  * @since 2019-01-12
  */
 @Slf4j

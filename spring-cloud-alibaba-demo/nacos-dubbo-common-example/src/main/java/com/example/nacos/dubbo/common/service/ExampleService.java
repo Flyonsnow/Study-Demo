@@ -3,7 +3,7 @@ package com.example.nacos.dubbo.common.service;
 /**
  * ExampleService
  *
- * @author hubo
+ * @author  
  * @since 2019-01-16
  */
 public interface ExampleService {

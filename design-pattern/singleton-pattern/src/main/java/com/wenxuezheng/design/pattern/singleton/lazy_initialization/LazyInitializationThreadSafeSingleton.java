@@ -4,7 +4,7 @@ package com.wenxuezheng.design.pattern.singleton.lazy_initialization;
 /**
  * TODO
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:34 下午
  */
 public class LazyInitializationThreadSafeSingleton {

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * TODO
  *
- * @author hubo
+ * @author
  * @since 2019-03-04
  */
 public class MonitorThread {

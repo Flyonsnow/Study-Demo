@@ -8,7 +8,7 @@ import com.google.common.cache.LoadingCache;
 import java.util.concurrent.ExecutionException;
 
 /**
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2022/3/24 2:20 PM
  */
 public class CacheLoaderDemo {

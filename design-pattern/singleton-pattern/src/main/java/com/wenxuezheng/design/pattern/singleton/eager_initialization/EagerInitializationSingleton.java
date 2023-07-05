@@ -4,7 +4,7 @@ package com.wenxuezheng.design.pattern.singleton.eager_initialization;
 /**
  * 饿汉式
  *
- * @author hu.bo@cestc.cn
+ * @author    
  * @date 2021/7/1 5:14 下午
  */
 public class EagerInitializationSingleton {

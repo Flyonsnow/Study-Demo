@@ -1,7 +1,7 @@
 package com.wenxuezheng.study.algorithm;
 
 /**
- * @author hubo
+ * @author  
  */
 public class Mergesort {
 
