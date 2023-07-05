@@ -5,7 +5,7 @@ import com.wenxuezheng.study.operation.log.report.annotation.OperationLogPrimary
 import java.lang.reflect.Field;
 
 /**
- * @author hu.bo
+ * @author    
  * 2022/8/5 17:57
  */
 public class ReflectUtils {

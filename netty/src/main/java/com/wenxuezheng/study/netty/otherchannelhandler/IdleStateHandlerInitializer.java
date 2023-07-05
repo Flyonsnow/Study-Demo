@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 使用 IdleStateHandler 来测试远程节点是否仍然还活着，并且在它失活时通过关闭连接来释放资源。
- * @author hu.bo
+ * @author    
  * @date 2022/7/26 10:44
  */
 @Slf4j

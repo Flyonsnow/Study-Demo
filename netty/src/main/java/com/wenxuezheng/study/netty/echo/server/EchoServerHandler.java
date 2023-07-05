@@ -10,7 +10,7 @@ import io.netty.util.CharsetUtil;
 
 
 /**
- * @author hu.bo
+ * @author    
  * @date 2022/7/18 23:49
  * @sharable 标示一个ChannelHandler可以被多个Channel安全地共享
  */
